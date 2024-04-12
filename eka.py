@@ -1,1 +1,1 @@
-print("koira")
+print("koira ja koira ja koira")
