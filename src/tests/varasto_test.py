@@ -91,6 +91,7 @@ class TestVarasto(unittest.TestCase):
 
     def test_str_palautus(self):
         # Testataan __str__:n tuloste
+        # uudella varastolla
         varasto4 = Varasto(100, 100)
 
         teksti = str(varasto4)
