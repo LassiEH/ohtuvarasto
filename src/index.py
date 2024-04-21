@@ -8,6 +8,12 @@ def main():
     print("Luonnin jälkeen:")
     print(f"Mehuvarasto: {mehua}")
     print(f"Olutvarasto: {olutta}")
+    get_and_set(mehua, olutta)
+    tulostus()
+    varasto_tiedot(olutta, mehua)
+    varasto_otot(olutta, mehua)
+
+def get_and_set(mehua, olutta):
 
     print("Olut getterit:")
     print(f"saldo = {olutta.saldo}")
@@ -22,6 +28,8 @@ def main():
     mehua.ota_varastosta(3.14)
     print(f"Mehuvarasto: {mehua}")
 
+def tulostus():
+
     print("Virhetilanteita:")
     print("Varasto(-100.0);")
     huono = Varasto(-100.0)
@@ -30,6 +38,8 @@ def main():
     print("Varasto(100.0, -50.7)")
     huono = Varasto(100.0, -50.7)
     print(huono)
+
+def varasto_tiedot(olutta, mehua):
 
     print(f"Olutvarasto: {olutta}")
     print("olutta.lisaa_varastoon(1000.0)")
@@ -40,6 +50,8 @@ def main():
     print("mehua.lisaa_varastoon(-666.0)")
     mehua.lisaa_varastoon(-666.0)
     print(f"Mehuvarasto: {mehua}")
+
+def varasto_otot(olutta, mehua):
 
     print(f"Olutvarasto: {olutta}")
     print("olutta.ota_varastosta(1000.0)")
